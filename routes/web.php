@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/categories', 'categoriesController@categories')->name('categories');
+Route::get('/articles', 'articlesController@articles')->name('articles');
